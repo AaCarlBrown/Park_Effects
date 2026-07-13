@@ -1,0 +1,15 @@
+lineups,group,slope_pts_per_sd,se,z,n_cells
+home,ALL,0.7,1.24,0.6,20454
+home,corners (LF/RF),-1.62,2.36,-0.7,5113
+home,CF,3.04,5.78,0.5,2557
+home,1B,-3.28,2.72,-1.2,2557
+home,middle infield,9.28,5.03,1.8,5113
+home,3B,0.54,3.1,0.2,2557
+home,C,5.26,1.94,2.7,2557
+road,ALL,0.83,1.22,0.7,20461
+road,corners (LF/RF),-1.16,2.24,-0.5,5114
+road,CF,3.31,5.87,0.6,2558
+road,1B,-3.87,2.77,-1.4,2558
+road,middle infield,9.6,5.0,1.9,5115
+road,3B,1.0,2.88,0.3,2558
+road,C,5.32,1.94,2.7,2558

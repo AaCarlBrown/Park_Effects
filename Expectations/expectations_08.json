@@ -1,0 +1,13 @@
+{
+ "stage": 8,
+ "description": "Pre-registered expectations for the fielding stage. Fielder identity is controlled by shift-share (observed minus what the cell's actual fielders post everywhere), not fixed effects; z-scales therefore differ somewhat from the manuscript's per-PA model.",
+ "min_first_touches": 5000,
+ "fenway_lf_max_z": -4.0,
+ "notes": "Manuscript claims under test: Fenway LF out-conversion deficit (draft: nine SEs) - gate at z <= -4 given the different control; short-porch right fields suppressed (Baker Bowl, Ebbets), deep right fields inflated (Pittsburgh); catcher share peaks at Dodger Stadium and Candlestick (informational); error-rate park effects real at 3B/SS, marginal at 2B, nil in OF (gated as infield true SD > outfield true SD); Ebbets and Griffith infields hot, Shibe clean (informational); turf era suppression (informational). First-touch share conservation is the validation hook the manuscript mentions.",
+ "conservation_min": 0.55,
+ "revisions": {
+  "v2": "v1's shift-share used own-park-inclusive fielder rates; home fielders absorb the park effect (Rogers Centre cells cancelled to exactly zero). v2 uses leave-own-park-out rates, adds the pitcher position, excludes home runs from first-touch attribution, and redefines conservation as attributed first-touches over non-HR BIP.",
+  "v3": "v2's conversion metric died differently: firstf covers only 46% of non-HR BIP (populated mainly on fielding sequences), so out-given-first-touch was ~1.0 for everyone and all z-scores were exactly zero. v3 metric: putout SHARE - P(putout credited to position p per non-HR BIP while fielder stands there), leave-own-park-out, full historical coverage. Matches the manuscript's 'where fielding work goes' claims directly. Errors machinery untouched (its v2 results already reproduced the draft's structure: Shibe cleanest, Griffith hot, infield > OF). Conservation redefined: BIP putouts per non-HR BIP (~0.65-0.70 expected: outs per BIP).",
+  "v4": "v3's per-BIP putout rates exposed park-level attribution coverage differences (deduced/boxscore game accounts carry thin fielding credits; Sportsman's suppressed across five positions at once, overall coverage 33%). v4 uses COMPOSITIONAL shares - each position's share of the park's attributed putouts - so coverage cancels; a coverage column is carried for transparency. Error true-SD now computed on cells with 2000+ chances (zero-chance cells were poisoning the variance). Fenway LF z=-18.3 already passed under v3 and should persist. Aggregation-only change; --from-cells reuses the saved cells file, no restream."
+ }
+}

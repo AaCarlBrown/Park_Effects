@@ -1,0 +1,14 @@
+{
+  "stage": 3,
+  "description": "Pre-registered expectations for the park-by-season series. Shift ranges are read from the manuscript's Figures 1-2 regime means (Fenway -0.005 to +0.018; Wrigley roughly +0.001 to +0.0165, runs/PA). Mismatches are findings. Revised 2026-07-13: see revisions.",
+  "fenway_1935_shift_range": [0.015, 0.030],
+  "wrigley_1962_shift_range": [0.010, 0.022],
+  "components_2020": 3,
+  "interleague_from": 1997,
+  "realtime_min_mean_coverage": 0.75,
+  "hindsight_realtime_min_corr": 0.85,
+  "revisions": {
+    "components": "Original expectation of 1 component in all non-2020 seasons FAILED, correctly: AL and NL never meet in the regular season before interleague play (June 1997), so 1910-1996 have exactly 2 components. Verified on the Stage 3 output: 2 in every season 1910-1996, 1 in 1997-2025 except 2020's 3. Check replaced with the era-aware version. Within-component re-centering is the league-relative convention the paper already uses; it also confirms Federal League games are not in the panel (1914-15 would otherwise show 3)."
+  },
+  "notes": "2020 pods were the three regional divisions, so three components. Real-time coverage is below 100 percent by construction: rookies have no as-of skill until their second season. The changepoint screen (u_03b) and the Fenway 1934/35 post-mortem (u_03c) run after this gate passes; per the pre-registered Stage 3c rule, the screen's series choice (raw vs shrunk) is decided by the post-mortem diagnosis and then applied to all 65 parks uniformly."
+}

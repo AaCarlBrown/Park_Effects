@@ -1,0 +1,5 @@
+synthetic rows 1,400,000, fit 15.9s
+mu_S: corr(hat, true) = 0.9989 (need >= 0.995)
+tau_bat: corr(hat, true) = 0.9889 (need >= 0.95)
+tau_pit: corr(hat, true) = 0.9817 (need >= 0.95)
+bat age peak 27 (true 27; accept 26-28)

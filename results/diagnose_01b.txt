@@ -1,0 +1,88 @@
+stage 1b diagnostics 2026-07-12T17:40:45
+
+--- null woba_value rows: 99,027 ---
+flag sums among null rows (vs full panel):
+  pa      null-rows    99,027   panel 15,374,332
+  single  null-rows         0   panel  2,503,032
+  double  null-rows         0   panel    630,872
+  triple  null-rows         0   panel    104,974
+  hr      null-rows         0   panel    325,612
+  sh      null-rows         0   panel    175,652
+  sf      null-rows         0   panel    100,912
+  hbp     null-rows         0   panel    103,118
+  walk    null-rows    99,027   panel  1,308,363
+  k       null-rows         0   panel  2,227,900
+  xi      null-rows         0   panel      1,964
+  roe     null-rows         0   panel    190,392
+  fc      null-rows         0   panel     62,191
+  othout  null-rows         0   panel  7,639,349
+  iw      null-rows    99,027   panel     99,027
+null rows by decade:
+season
+1910     2203
+1920     2840
+1930     4791
+1940     7173
+1950     6820
+1960    10402
+1970    13443
+1980    13024
+1990    12202
+2000    13172
+2010    10038
+2020     2919
+
+--- Wrigley (CHI11) game counts ---
+  all games, all seasons         8,637
+  all games since 1950           6,014
+  day games, all seasons         7,682
+  day games since 1950           5,061
+  night games, all seasons         955
+Wrigley games by decade and day/night:
+daynight    D    N
+decade            
+1910      301    0
+1920      772    0
+1930      777    1
+1940      771    1
+1950      775    0
+1960      812    0
+1970      805    0
+1980      762   23
+1990      612  170
+2000      581  228
+2010      480  330
+2020      234  202
+
+--- bat_hand semantics ---
+bat_bats value counts:
+bat_bats
+R      8729880
+L      4993216
+B      1650980
+NaN        256
+bat_hand value counts:
+bat_hand
+R    8734477
+L    4993733
+B    1645864
+?        258
+switch-hitter (bat_bats==B) PA: 1,650,980
+crosstab bat_hand x pit_hand for switch hitters:
+pit_hand  ?       L        R
+bat_hand                    
+B         2  466721  1173099
+L         0    1093     2816
+R         0    1847     5402
+crosstab bat_hand x bat_bats (full panel, top hands):
+bat_bats        B        L        R
+bat_hand                           
+?               0        4        3
+B         1639822     3626     2416
+L            3909  4989260      564
+R            7249      326  8726897
+spot check mantm101: bat_bats=B, bat_hand vs pit_hand:
+pit_hand     L     R
+bat_hand            
+B         3269  6636
+R            0     2

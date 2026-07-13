@@ -1,0 +1,19 @@
+INFO  stage 1 run 2026-07-12T17:46:55
+PASS  panel rows 15,374,332
+PASS  no nulls in game_id
+PASS  no nulls in bat_id
+PASS  no nulls in pit_id
+PASS  no nulls in park_id
+PASS  no nulls in season
+PASS  woba_value nulls (99,027) coincide exactly with intentional walks (wOBA excludes IBB)
+INFO  game log games: 202,040
+PASS  game log join coverage 100.0000%
+PASS  panel park_id vs game log park mismatch rate 0.06372%
+WARN  park_ids not in parkcode.txt: ['BIR01', 'BST01', 'MEX02', 'SAC01', 'SEO01', 'TAM02']
+INFO  BOS08: Braves Field, seasons 1915-1952, 219,763 PA (verify: Braves Field, 1915-1952)
+PASS  mean park-season PA 6,008 (expected 5,000-7,500)
+PASS  Wrigley day games since 1950: 5,061 (paper: 5,061)
+PASS  bat_side derived for 100.0000% of PA (2 unresolved)
+INFO  switch-hitter PA share 10.74%; their side is derived from pitcher hand
+INFO  wrote pa_derived.parquet (15,374,332 rows, 44 cols)
+INFO  GATE: PASSED - 0 FAIL, 1 WARN

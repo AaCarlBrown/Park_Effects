@@ -1,0 +1,17 @@
+{
+  "stage": "3b",
+  "description": "Pre-registered expectations for the changepoint screen. Break-year windows allow +/-1 around the manuscript dates; sizes come from the manuscript's Table 3 entries. Mismatches are findings.",
+  "min_seasons": 10,
+  "long_tenured_count_range": [50, 80],
+  "sup_lr_threshold": 12.0,
+  "min_segment": 4,
+  "total_breaks_range": [10, 26],
+  "fenway1_years": [1934, 1935],
+  "fenway2_years": [1984, 1985, 1986],
+  "wrigley1_years": [1961, 1962, 1963],
+  "wrigley2_years": [1991, 1992, 1993],
+  "between_park_sd_pts_range": [6, 14],
+  "within_regime_var_ratio_range": [0.8, 1.4],
+  "wrigley_composition_share_range": [0.15, 0.45],
+  "notes": "Screen runs on the RAW hindsight series (regime means are the screen's output, so shrinkage cannot precede it); u_03c verifies this choice against the shrunk alternative for the headline breaks. Pre-registered prediction, from pixel-reading Figure 1: the raw profile for Fenway peaks at 1934 (the Yawkey reconstruction year) while the shrunk profile peaks at 1935, explaining the original one-year miss. 1934-and-stays-1935 on the raw series would falsify that prediction and the paper keeps its 'missed by a year' sentence. min_seasons=10 is the long-tenure threshold; if the resulting park count is far from the paper's 65, that is a finding about the original threshold, not a knob to tune silently."
+}

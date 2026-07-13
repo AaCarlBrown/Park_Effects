@@ -1,0 +1,42 @@
+INFO  stage 7 ledger 2026-07-13T10:35:55
+INFO  factor->wOBA slope 0.0924
+INFO  bat_id: eligible 1,793; missing meso 0; missing conventional 0
+INFO  pit_id: eligible 1,604; missing meso 0; missing conventional 0
+PASS  batters with 3000+ PA and both adjustments: 1,793 (paper says 1,999)
+PASS  median |meso - conv| = 0.84 pts (paper 1.2)
+PASS  90th pct = 2.19 pts (paper 3.4)
+PASS  0.1% of careers > 5 pts apart (paper ~3%)
+PASS  median hindsight-vs-ex-ante = 0.84 pts (paper 0.7)
+PASS  5.6% of careers move > 2 pts under hand-aware adjustment (paper ~8%)
+INFO  Table 8 fill - top 10 batter gaps:
+                             name  meso  conv  diff    pa
+bat_id                                                   
+taboj101       James Reubin Tabor   6.9   1.5   5.4  4136
+chave001        Eric Cesar Chavez  -5.7  -0.9  -4.9  6228
+heltt001         Todd Lynn Helton  16.9  12.4   4.5  9446
+doerb101    Robert Pershing Doerr   7.9   3.4   4.5  8024
+dye-j001     Jermaine Terrell Dye  -2.2   2.2  -4.3  7210
+longt002       Terrence Deon Long  -5.4  -1.1  -4.3  3325
+grieb001          Benjamin Grieve  -5.0  -0.9  -4.0  3743
+lopej003     Jose Celestino Lopez  -6.6  -2.6  -4.0  4089
+sweem002     Michael John Sweeney  -1.0   3.1  -4.0  5848
+bichd001  Alphonse Dante Bichette  14.9  10.9   3.9  6856
+INFO  Table 9 fill - top 10 pitcher gaps:
+                                        name  meso  conv  diff    pa
+pit_id                                                              
+hught102               Cecil Carlton Hughson   8.6   2.3   6.3  5656
+rybam101                 Dominic Joseph Ryba   7.8   2.2   5.6  3355
+hardr001                James Richard Harden  -4.7   0.6  -5.3  3929
+juddo101           Thomas William Oscar Judd   4.9  -0.0   4.9  3392
+willc102           Claude William Willoughby  12.2   7.4   4.9  3945
+gallz001                Zachary Peter Gallen   5.4   0.5   4.9  4142
+reyna001  Armando Martin (Gutierrez) Reynoso  12.5   7.6   4.8  4698
+leskc001                Curtis John Leskanic  16.3  11.7   4.6  3111
+sweel101                Lester Leo Sweetland  10.9   6.3   4.6  3497
+yan-e001                    Esteban Luis Yan  -4.6  -0.2  -4.4  3096
+INFO  Musial: meso +3.2, conv +2.1, hand delta +2.5
+INFO  Yastrzemski: meso +7.8, conv +5.4, hand delta -2.7
+INFO  Terry Moore: meso +3.7, conv +2.7, hand delta -2.0
+INFO  Walker: meso +13.4, conv +9.7, hand delta -1.4
+PASS  top-100: 20 players 5+ spots apart between systems (paper 27), max 15 (paper 20), median 2 (paper 2)
+INFO  GATE: PASSED - 0 FAIL, 0 WARN

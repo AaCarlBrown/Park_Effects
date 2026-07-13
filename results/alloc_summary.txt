@@ -1,0 +1,21 @@
+INFO  stage 8b 2026-07-13T12:53:24
+INFO  player-position cells: 190,079
+INFO  results (slope = wOBA-skill pts per SD of park demand):
+lineups           group  slope_pts_per_sd   se    z  n_cells
+   home             ALL              0.70 1.24  0.6    20454
+   home corners (LF/RF)             -1.62 2.36 -0.7     5113
+   home              CF              3.04 5.78  0.5     2557
+   home              1B             -3.28 2.72 -1.2     2557
+   home  middle infield              9.28 5.03  1.8     5113
+   home              3B              0.54 3.10  0.2     2557
+   home               C              5.26 1.94  2.7     2557
+   road             ALL              0.83 1.22  0.7    20461
+   road corners (LF/RF)             -1.16 2.24 -0.5     5114
+   road              CF              3.31 5.87  0.6     2558
+   road              1B             -3.87 2.77 -1.4     2558
+   road  middle infield              9.60 5.00  1.9     5115
+   road              3B              1.00 2.88  0.3     2558
+   road               C              5.32 1.94  2.7     2558
+PASS  NULL at registered power: overall home slope 0.7 pts/SD, z = 0.6 (the section's 'effect should be small' framing absorbs this)
+INFO  registered signal locus (corners): slope -1.62 at z = -0.7
+INFO  GATE: PASSED - 0 FAIL, 0 WARN

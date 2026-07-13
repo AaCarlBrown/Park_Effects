@@ -1,0 +1,18 @@
+{
+  "stage": 0,
+  "description": "Pre-registered expectations for input verification. Values come from the manuscript and prior project records; a mismatch is a finding, not something to patch around.",
+  "panel_rows": 15374332,
+  "season_min": 1910,
+  "season_max": 2025,
+  "required_columns": ["bat_id", "pit_id", "game_id", "woba_value"],
+  "required_files": ["pa_panel.parquet", "wOBA_weights.csv", "Teams.csv", "biofile0.csv", "pitching.csv"],
+  "optional_files": ["parkcode.txt"],
+  "gamelog_year_range": [1910, 2025],
+  "wind_stations": {
+    "ohare": {"station": "725300-94846", "year_range": [1950, 1972]},
+    "midway": {"station": "725340-14819", "year_range": [1973, 2025]}
+  },
+  "woba_weights_year_range": [1910, 2025],
+  "short_seasons_no_flag": [1918, 1919, 1981, 1994, 1995, 2020],
+  "season_pa_outlier_ratio": 0.65
+}

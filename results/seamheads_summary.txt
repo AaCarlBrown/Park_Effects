@@ -1,0 +1,26 @@
+stage 4d 2026-07-13T13:51:23
+our team-seasons 1910-2024: 2548; matched: 2548; unmatched: 0
+
+PRIMARY runs-per-game TF correlation: 0.9999 (mean abs diff 0.0001)
+SECONDARY published-style factor corr, pooled 1910-2024: 0.9840 (n=2548)
+SECONDARY published-style factor corr, 1910-1987: 0.9819 (n=1468)
+SECONDARY published-style factor corr, 1988-2024: 0.9869 (n=1080)
+
+largest primary disagreements:
+ season team park_id     tf  tf_sh  absdiff
+   2015  BAL   BAL12 1.2277 1.1798   0.0479
+   2023  CHA   CHI12 0.9813 0.9398   0.0415
+   2015  TBA   STP01 0.9402 0.9754   0.0352
+   2017  MIL   MIL06 1.0942 1.0650   0.0292
+   2023  TOR   TOR02 0.9020 0.9305   0.0285
+   2011  FLO   MIA01 0.9912 0.9630   0.0282
+   2022  TOR   TOR02 0.9649 0.9893   0.0244
+   2011  SEA   SEA03 0.8547 0.8765   0.0218
+   2023  CHN   CHI11 1.0533 1.0340   0.0193
+   2017  MIA   MIA02 0.8483 0.8626   0.0143
+
+gates:
+  PASS  matched 2548 vs min 2400
+  PASS  primary corr 0.9999 >= 0.99
+  WARN  secondary corr 0.9840 OUTSIDE [0.85, 0.97] (informational)
+STAGE 4d GATE: WARN

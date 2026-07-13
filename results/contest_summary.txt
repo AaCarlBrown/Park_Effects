@@ -1,0 +1,24 @@
+INFO  stage 4b contest 2026-07-13T13:00:54
+INFO  calibration: wOBA-diff per unit (factor-1) 0.0924; per unit effect 1.112; (factor-1) per unit effect 8.258
+INFO  scored park-seasons: 2,085
+INFO  results:
+     system  mae_run_factor_pts  mae_woba_effect_pts
+       meso                5.59                 7.22
+         br                5.64                 7.63
+         fg                5.45                 7.57
+persistence                8.21                 8.96
+    nothing                7.62                10.05
+PASS  meso run-factor MAE 5.59 vs paper 5.1 (tol 0.8)
+PASS  meso wOBA MAE 7.22 vs paper 7.06 (tol 1.2)
+PASS  br run-factor MAE 5.64 vs paper 5.7 (tol 0.8)
+PASS  br wOBA MAE 7.63 vs paper 8.04 (tol 1.2)
+PASS  fg run-factor MAE 5.45 vs paper 5.17 (tol 0.8)
+PASS  fg wOBA MAE 7.57 vs paper 7.3 (tol 1.2)
+PASS  persistence run-factor MAE 8.21 vs paper 7.57 (tol 0.8)
+WARN  persistence wOBA MAE 8.96 vs paper 10.24 (tol 1.2)
+PASS  nothing run-factor MAE 7.62 vs paper 7.07 (tol 0.8)
+PASS  nothing wOBA MAE 10.05 vs paper 10.22 (tol 1.2)
+PASS  mesoball strictly best in wOBA currency (7.22 vs FG 7.57, BR 7.63)
+PASS  factor-currency spread among meso/FG/BR 0.19 pts (< 0.5)
+PASS  persistence worse than nothing (the paper's claim)
+INFO  GATE: PASSED - 0 FAIL, 1 WARN

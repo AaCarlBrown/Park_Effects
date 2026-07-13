@@ -1,0 +1,9 @@
+INFO  stage 3 park series 2026-07-13T03:03:14
+INFO  hindsight residuals on 97.93% of PA
+PASS  Fenway regime shift (1935-84 minus 1912-33) = +0.0225 runs/PA (expected [+0.015, +0.030])
+PASS  Wrigley regime shift (1962-91 minus 1914-61) = +0.0183 runs/PA (expected [+0.010, +0.022])
+PASS  2020 components detected: 3 (expected 3)
+PASS  components: 2 (AL/NL) every season before 1997, 1 from 1997 on (2020 excepted)
+PASS  realtime residual coverage averages 84.46% of PA (as-of skills exist only for already-seen players)
+PASS  hindsight vs realtime park-season correlation 0.959 (n_pa>=3000; expected >= 0.85)
+INFO  GATE: PASSED - 0 FAIL, 0 WARN

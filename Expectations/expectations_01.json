@@ -1,0 +1,20 @@
+{
+  "stage": 1,
+  "description": "Pre-registered expectations for Stage 1 derivations. Mismatches are findings. Revised 2026-07-12 after diagnose_01b; original values and reasons for each revision preserved below.",
+  "panel_rows": 15374332,
+  "gamelog_join_min_coverage": 0.998,
+  "daynight_values": ["D", "N"],
+  "wrigley_park_id": "CHI11",
+  "wrigley_day_games_since_1950_approx": 5061,
+  "wrigley_day_games_tolerance": 10,
+  "park_season_pa_mean_range": [5000, 7500],
+  "null_free_columns": ["game_id", "bat_id", "pit_id", "park_id", "season"],
+  "bat_side_min_coverage": 0.999,
+  "park_id_vs_gamelog_park_mismatch_max": 0.001,
+  "revisions": {
+    "wrigley_day_games": "Original expectation 9442 (from the manuscript draft) FAILED: measured 5,061 day games since 1950. 9,442 matches no definition (all games 8,637; all day games 7,682). Recorded as a probable draft error; Stage 5 reports the definitive matched count and the manuscript sentence will be corrected to it.",
+    "woba_value_nulls": "Original expectation of zero nulls FAILED: 99,027 nulls, shown by diagnose_01b to coincide exactly with intentional walks (wOBA excludes IBB). Check replaced with exact-coincidence test; Stage 2 drops IBB rows from the run-value model.",
+    "switch_hitter_check": "Original check FAILED because bat_hand is the roster hand, not the per-PA side (Mantle is B on every PA). Stage 1 now derives bat_side: listed side for non-switch hitters, opposite the pitcher's hand for switch hitters. Manuscript wording correction queued: 'the side implied by the opposing pitcher's hand,' not 'the side the batter took.'"
+  },
+  "notes": "Hitter type/quality quartile definitions are deferred to Stage 6 prep; supply the original analysis-board definitions when found. Six park_ids absent from parkcode.txt are recent special venues (BIR01 Rickwood 2024, BST01 Bristol 2025, MEX02, SEO01, SAC01, TAM02) - benign."
+}

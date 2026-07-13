@@ -1,0 +1,32 @@
+INFO  stage 8 v4 2026-07-13T12:44:19
+INFO  reusing park_fielding_cells.csv
+PASS  Fenway LF out-conversion deficit z = -16.4 (paper: about -9; gate <= -4.0)
+INFO  most suppressed out-conversion (park, pos, z):
+            name  pos  conv_z
+   Crosley Field    3   -16.8
+     Fenway Park    7   -16.4
+   Wrigley Field    5   -13.0
+Yankee Stadium I    3   -11.7
+   Wrigley Field    2   -11.1
+Minute Maid Park    7   -10.4
+INFO  most inflated:
+            name  pos  conv_z
+   Crosley Field    7    13.2
+   Wrigley Field    3    12.3
+Yankee Stadium I    7    12.1
+     Coors Field    3    12.0
+PASS  error-rate park true SD: 3B/SS 2.9 pts, 2B 1.8, OF 2.3 (paper: real at 3B/SS, nil in OF)
+INFO  hottest/cleanest infields (mean err z):
+name
+Sportsman's Park III    7.5
+Griffith Stadium        6.2
+Robison Field           4.7
+Handlan's Park          4.2
+...
+name
+Shibe Park            -7.0
+Cinergy Field         -4.4
+Crosley Field         -4.1
+Exposition Park III   -3.6
+WARN  putout attribution: 168 parks below 55% BIP-putouts per non-HR BIP (overall 32.79%)
+INFO  GATE: PASSED - 0 FAIL, 1 WARN

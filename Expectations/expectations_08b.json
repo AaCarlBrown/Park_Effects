@@ -1,0 +1,18 @@
+{
+  "stage": "8b",
+  "description": "PRE-REGISTERED by the author, 2026-07-13, before any Stage 8b analysis ran. The lineup-fit question: do teams accept weaker bats where their park asks more of a fielding position?",
+  "registration": {
+    "unit": "team-season x fielding position (2-9), home-game lineups from plays.csv bat_f",
+    "outcome": "PA-weighted mean full-sample tau_bat of players fielded at the position, demeaned by season x position",
+    "regressor": "park positional demand = Stage 8 compositional putout-share effect (park x position), standardized within position",
+    "control": "park overall career effect (guards the Coors confound: hitters' parks correlating with both demand and roster construction)",
+    "prediction": "negative overall slope; signal carried by the OUTFIELD CORNERS (slugger parked in front of a short wall - Fenway/Minute Maid LF, Baker Bowl RF), CF secondary; nulls at 1B and middle infield",
+    "magnitude": "expected 3-5 points of wOBA-skill per SD of park demand at the most differentiated positions",
+    "detection": "overall slope negative at >= 2 SE (cluster-robust by park). Below 2 SE is a publishable null absorbed by the section's 'the effect should be small' framing. Positive at >= 2 SE means the confound control failed; reported as unresolved, not spun.",
+    "auxiliary": "home vs road decomposition, informational only: roster-level fit shows in road lineups too; usage-level fit makes home exceed road",
+    "scope": "reduced form (skill-on-demand regression, clustered SEs), not the censored-share Tobit; the appendix gains one clause noting this"
+  },
+  "slope_detection_se": 2.0,
+  "expected_slope_range_pts_per_sd": [-8.0, -1.0],
+  "notes": "The corners emphasis (amended from the manuscript TK's center-field emphasis) follows from the Stage 6 hand-x-type discovery: a short wall lowers the defensive cost and raises the offensive payoff for the same player type simultaneously."
+}

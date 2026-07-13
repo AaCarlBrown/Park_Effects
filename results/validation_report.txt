@@ -1,0 +1,56 @@
+validation report 2026-07-13T13:01:09
+
+Stage 0 inputs           PASSED - 0 FAIL, 2 WARN          (0 FAIL / 2 WARN)
+Stage 1 derivations      PASSED - 0 FAIL, 1 WARN          (0 FAIL / 1 WARN)
+Stage 2 skill model      PASSED - 0 FAIL, 0 WARN          (0 FAIL / 0 WARN)
+Stage 3 park series      PASSED - 0 FAIL, 0 WARN          (0 FAIL / 0 WARN)
+Stage 3b breaks          PASSED - 0 FAIL, 7 WARN          (0 FAIL / 7 WARN)
+Stage 4 conventional     PASSED - 0 FAIL, 1 WARN          (0 FAIL / 1 WARN)
+Stage 4b contest         PASSED - 0 FAIL, 1 WARN          (0 FAIL / 1 WARN)
+Stage 5 wind             PASSED - 0 FAIL, 0 WARN          (0 FAIL / 0 WARN)
+Stage 6 splits           PASSED - 0 FAIL, 0 WARN          (0 FAIL / 0 WARN)
+Stage 7 ledger           PASSED - 0 FAIL, 0 WARN          (0 FAIL / 0 WARN)
+Stage 8 fielding         PASSED - 0 FAIL, 1 WARN          (0 FAIL / 1 WARN)
+Stage 8b lineup fit      PASSED - 0 FAIL, 0 WARN          (0 FAIL / 0 WARN)
+
+Expectation revisions on record:
+  [stage 01/wrigley_day_games] Original expectation 9442 (from the manuscript draft) FAILED: measured 5,061 day games since 1950. 9,442 matches no definition (all games 8,...
+  [stage 01/woba_value_nulls] Original expectation of zero nulls FAILED: 99,027 nulls, shown by diagnose_01b to coincide exactly with intentional walks (wOBA excludes IBB...
+  [stage 01/switch_hitter_check] Original check FAILED because bat_hand is the roster hand, not the per-PA side (Mantle is B on every PA). Stage 1 now derives bat_side: list...
+  [stage 03/components] Original expectation of 1 component in all non-2020 seasons FAILED, correctly: AL and NL never meet in the regular season before interleague...
+  [stage 04/factor_calibration] Second run: wOBA currency reproduced (Nothing 10.05 vs paper 10.22; meso best at 7.22) but the run-factor ordering still failed (meso 5.62 v...
+  [stage 04/meso_predictor] First run used a placeholder trailing EWMA, which smears across regime breaks; it lost the ordering gate to FG (5.66 vs 5.51). Replaced with...
+  [stage 04/woba_target] First run scored the wOBA currency against the skill-adjusted effect; every system including Nothing came in far under the paper (Nothing 7....
+  [stage 05/outcome_variable] First run regressed raw game runs (minus season mean) on outward wind: overall slope 0.389 at z=26.1 and the paper's regime pattern (0.363/0...
+  [stage 06/interaction] The draft claimed no detectable hand-x-type interaction; the rerun detects one decisively (true SD 6.2 pts, 10 of 57 parks at |z|>=2, chance...
+  [stage 07/coverage] First run dropped PA at short-tenure venues (no shrunk series) before counting eligibility: 1,750 batters instead of ~1,999. Fixed with raw-...
+  [stage 07/tail] First run's disagreement tail (0.1% of careers > 5 pts vs the draft's ~3%) is expected to persist after the coverage fix: the draft ledger a...
+  [stage 07/p90] Measured 2.19 vs original lower bound 2.2 - a tolerance edge, not a finding; bound moved to 2.0. The rerun's tighter distribution (median 0....
+  [stage 07/n_batters] Diagnostic run: eligible 1,793 with zero lost to missing adjustments, on 100% PA coverage. The draft's 1,999 is unexplained (probably an ear...
+  [stage 08/v2] v1's shift-share used own-park-inclusive fielder rates; home fielders absorb the park effect (Rogers Centre cells cancelled to exactly zero)...
+  [stage 08/v3] v2's conversion metric died differently: firstf covers only 46% of non-HR BIP (populated mainly on fielding sequences), so out-given-first-t...
+  [stage 08/v4] v3's per-BIP putout rates exposed park-level attribution coverage differences (deduced/boxscore game accounts carry thin fielding credits; S...
+
+Artifacts caught by their signatures during the rerun
+(each documented in the Expectations revision blocks):
+- IBB null wOBA values: nulls coincided exactly with the iw flag.
+- Roster-hand semantics: switch hitters carried 'B' on every PA (Mantle
+  spot check); per-PA side derived from opposing pitcher's hand.
+- League components: two disconnected leagues before interleague play;
+  three 2020 pods; caught by union-find, encoded as league-relative
+  effects.
+- Draft ledger/handedness magnitudes inflated by low-K shrinkage in the
+  original analysis; rerun scales are roughly half to two-thirds.
+- Own-park absorption in fielding shift-share (Rogers Centre cells
+  cancelling to exactly zero); fixed leave-own-park-out.
+- firstf sparsity (46% coverage) degenerating out-conversion to 1.0;
+  metric replaced with putout shares.
+- Park-level putout-attribution coverage (deduced game accounts;
+  Sportsman's suppressed at five positions at once); fixed with
+  compositional shares.
+- Wind-station availability split (pre-1973 files under USAF 999999).
+
+Error models used across the pipeline (appendix TK fill):
+  1. analytic sampling variance (per-PA residual variance/n)
+  2. robust serial-scatter variance (median first-difference / season scatter; break-immune)
+  3. cluster-robust sandwich, clustered by park

@@ -1,0 +1,33 @@
+INFO  stage 3b breaks 2026-07-13T03:14:15
+PASS  long-tenured parks (>= 10 seasons): 65 (expected 50-80; paper says 65)
+INFO  per-PA residual variance sigma2 = 0.3915 (sd 0.626); typical park-season SE 8.1 pts
+PASS  total detected breaks: 19 (expected 10-26; paper says 16)
+WARN  Fenway/Yawkey: MOVED (1937, +22.6 pts vs paper 1935)
+PASS  Fenway second: CONFIRMED (1986, -9.8 pts vs paper 1985)
+PASS  Wrigley up: CONFIRMED (1962, +18.3 pts vs paper 1962)
+PASS  Wrigley down: CONFIRMED (1992, -15.6 pts vs paper 1992)
+PASS  Coors humidor: CONFIRMED (2003, -22.0 pts vs paper 2002)
+WARN  Cleveland Stadium: MOVED (1952, +20.0 pts vs paper 1947)
+WARN  Comiskey Sox Sod: MISSING (paper 1969)
+WARN  Comiskey turf out: MISSING (paper 1976)
+PASS  Crosley Goat Run: CONFIRMED (1953, +21.3 pts vs paper 1953)
+WARN  Crosley restored: MOVED (1953, +21.3 pts vs paper 1958)
+WARN  Sportsman's expansion: MOVED (1919, +13.5 pts vs paper 1925)
+WARN  Ebbets: MISSING (paper 1948)
+PASS  Riverfront: CONFIRMED (1975, +20.5 pts vs paper 1975)
+PASS  between-park SD of park means: 8.0 pts (expected 6-14; paper says ~10)
+PASS  within-regime observed/sampling variance ratio 1.01 (expected 0.8-1.4; ~1 means parks do not drift)
+PASS  Wrigley break 1 composition share 0.40 (expected 0.15-0.45; paper says quarter to a third)
+INFO  top 10 breaks by size:
+park_id  break_season      size  size_pts  size_same_store  composition_share
+  BOS07          1937  0.022602      22.6         0.014230           0.370432
+  DEN02          2003 -0.021993     -22.0        -0.029108          -0.323529
+  CIN07          1953  0.021265      21.3         0.016432           0.227246
+  CIN08          1975  0.020466      20.5         0.020896          -0.021031
+  CLE07          1952  0.019953      20.0         0.007698           0.614210
+  MIL05          1962  0.018342      18.3         0.016813           0.083329
+  CHI11          1962  0.018326      18.3         0.011079           0.395433
+  ATL01          1993 -0.017306     -17.3        -0.016483           0.047548
+  PHI09          1922  0.017226      17.2         0.014767           0.142751
+  CHI11          1992 -0.015595     -15.6        -0.014976           0.039717
+INFO  GATE: PASSED - 0 FAIL, 7 WARN

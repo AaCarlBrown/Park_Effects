@@ -1,0 +1,14 @@
+event,park_id,paper_year,paper_size_pts,detected_year,detected_size_pts,status
+Fenway/Yawkey,BOS07,1935,23.0,1937.0,22.6,MOVED
+Fenway second,BOS07,1985,,1986.0,-9.8,CONFIRMED
+Wrigley up,CHI11,1962,,1962.0,18.3,CONFIRMED
+Wrigley down,CHI11,1992,,1992.0,-15.6,CONFIRMED
+Coors humidor,DEN02,2002,-29.0,2003.0,-22.0,CONFIRMED
+Cleveland Stadium,CLE07,1947,24.0,1952.0,20.0,MOVED
+Comiskey Sox Sod,CHI10,1969,23.0,,,MISSING
+Comiskey turf out,CHI10,1976,-15.0,,,MISSING
+Crosley Goat Run,CIN07,1953,19.0,1953.0,21.3,CONFIRMED
+Crosley restored,CIN07,1958,-9.0,1953.0,21.3,MOVED
+Sportsman's expansion,STL07,1925,,1919.0,13.5,MOVED
+Ebbets,BRO03,1948,,,,MISSING
+Riverfront,CIN08,1975,,1975.0,20.5,CONFIRMED

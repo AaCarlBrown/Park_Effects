@@ -1,0 +1,20 @@
+{
+ "stage": "4d",
+ "description": "Pre-registered 2026-07-13, before any correlation was computed. External cross-check of the rebuilt conventional park factors (u_04 team_season_factors.csv) against the Seamheads Parkfactors Database (December 2024 CSV release, obtained from seamheads.com under its individual-research license; not redistributed). Purpose: replace the manuscript's unverifiable 'correlation with their published values was 0.94' recollection with a number a reader can reproduce.",
+ "primary": {
+  "metric": "Pearson correlation, per team-season, of our raw one-year team factor TF = (runs/game at home)/(runs/game on road) against the same quantity computed from Seamheads Home_Main_Data_WO_Parks and Visitor_Main_Data ((R_Off_H+R_Def_H)/GP_H over (R_Off_A+R_Def_A)/GP_A), teams mapped via Retrosheet_BBDB_Team_XRef (identity where unmapped), seasons 1910-2024.",
+  "rationale": "Both sides descend mostly from Retrosheet game logs (Seamheads used MacMillan for runs through 1987), so this gates our game-log reconstruction, not the methodology gap.",
+  "matched_min": 2400,
+  "corr_min_fail": 0.98,
+  "corr_min_warn": 0.99
+ },
+ "secondary": {
+  "metric": "Pearson correlation of our TF against the Seamheads-style published one-year factor: per-AB run rates (home/road) with their documented other-parks corrector. This is the analogue of the manuscript's original comparison to publisher values (different denominator, different correction = the 'undisclosed adjustments' gap).",
+  "corr_expected_range": [0.85, 0.97],
+  "gate": "informational only; reported by era (1910-1987 MacMillan-sourced vs 1988-2024) as well as pooled"
+ },
+ "notes": "Largest absolute TF disagreements listed for inspection (expect forfeits, ties, and games our loader drops for missing runs). If the primary gate fails, the finding is that our game-log aggregation diverges from an independently curated source and the manuscript sentence must weaken, not the reverse.",
+ "revisions": {
+  "v2": "First run matched 2,545 of 2,548 (ANA 2022-24 unmatched: the XRef table ends at 2021 while the ANA/LAA retro-vs-Lahman difference persists). Team mapping generalized to: year-specific XRef row if present, else identity if Seamheads has the (year, team) key, else the team's most recent XRef mapping. Gates unchanged; results before/after: primary corr 0.9999 both, secondary 0.9840/0.9842."
+ }
+}

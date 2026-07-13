@@ -1,0 +1,12 @@
+INFO  stage 5 wind 2026-07-13T13:01:02
+INFO  Midway obs 133,472; O'Hare obs 129,747 (afternoon UTC hours only)
+PASS  matched 5,051 of 5,062 Wrigley day games since 1950 to hourly wind (99.4% Midway)
+INFO  raw-runs slope (uncontrolled): 0.389 (z 26.1)
+PASS  overall outward-wind slope 0.379 runs/game per m/s (z = 24.0; paper: 0.37 at z~30)
+PASS  statistical strength z = 24.0 >= 15
+INFO  regime 1950-1961: slope 0.342 (se 0.039, n 932 games)
+INFO  regime 1962-1991: slope 0.450 (se 0.023, n 2,351 games)
+INFO  regime 1992-2025: slope 0.308 (se 0.026, n 1,768 games)
+PASS  1962 rise +0.108 at 2.4 SE (final gate >= 2.0; accepted outcome 2.4)
+PASS  1992 fall +0.142 at 4.1 SE (final gate >= 3.5; accepted outcome 4.1)
+INFO  GATE: PASSED - 0 FAIL, 0 WARN

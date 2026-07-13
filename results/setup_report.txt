@@ -1,0 +1,24 @@
+INFO  stage 0 run 2026-07-12T17:36:12
+PASS  data directory: C:\SABR_Mesoball\data
+PASS  output directory: C:\SABR_Mesoball\output
+PASS  GitHub directory: C:\SABR_Mesoball\GitHub
+PASS  pa_panel.parquet: present, 140,014,920 bytes
+PASS  wOBA_weights.csv: present, 12,900 bytes
+PASS  Teams.csv: present, 701,383 bytes
+PASS  biofile0.csv: present, 4,077,362 bytes
+PASS  pitching.csv: present, 152,911,585 bytes
+PASS  parkcode.txt (optional): present
+PASS  game logs present for all seasons 1910-2025 (116 files)
+PASS  wind ohare (725300-94846) complete 1950-1972
+WARN  wind ohare also has years outside expected split: 1973-2025 (53 files)
+PASS  wind midway (725340-14819) complete 1973-2025
+WARN  wind midway also has years outside expected split: 1950-1972 (23 files)
+PASS  wOBA_weights.csv covers 1910-2025
+PASS  Teams.csv through 2025
+PASS  panel rows = 15,374,332 (matches paper)
+PASS  panel has required columns ['bat_id', 'pit_id', 'game_id', 'woba_value']
+INFO  panel columns (40): ['game_id', 'inning', 'bat_team', 'pit_team', 'bat_id', 'pit_id', 'bat_hand', 'pit_hand', 'pa', 'single', 'double', 'triple', 'hr', 'sh', 'sf', 'hbp', 'walk', 'k', 'xi', 'roe', 'fc', 'othout', 'iw', 'season', 'park_id', 'hometeam', 'visteam', 'bat_home', 'bat_birthdate', 'bat_bats', 'bat_throws', 'pit_birthdate', 'pit_bats', 'pit_throws', 'bat_age', 'pit_age', 'bat_birth_year', 'pit_birth_year', 'bat_is_pitcher', 'woba_value']
+PASS  panel seasons 1910-2025
+PASS  no unexpected low-coverage seasons (known short seasons exempt: [1918, 1919, 1981, 1994, 1995, 2020])
+INFO  season PA range: min 66,506 (2020), max 190,261 (2000)
+INFO  GATE: PASSED - 0 FAIL, 2 WARN

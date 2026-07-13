@@ -1,0 +1,106 @@
+park_id,in_parkcode,name,pa,first_season,last_season
+ANA01,True,Angel Stadium of Anaheim,361898,1966,2025
+ARL01,True,Arlington Stadium,133991,1972,1993
+ARL02,True,Rangers Ballpark in Arlington,162724,1994,2019
+ARL03,True,Globe Life Field in Arlington,32535,2020,2025
+ATL01,True,Atlanta-Fulton County Stadium,186830,1966,1996
+ATL02,True,Turner Field,123671,1997,2016
+ATL03,True,Suntrust Park,51327,2017,2025
+BAL11,True,Memorial Stadium,226802,1954,1991
+BAL12,True,Oriole Park at Camden Yards,204907,1992,2025
+BIR01,False,,73,2024,2024
+BOS05,True,South End Grounds III,27647,1910,1914
+BOS06,True,Huntington Avenue Baseball Grounds,11615,1910,1911
+BOS07,True,Fenway Park,693924,1912,2025
+BOS08,True,Braves Field,219763,1915,1952
+BST01,False,,78,2025,2025
+BUF05,True,Sahlen Field,3741,2020,2021
+CHI08,True,West Side Grounds,35002,1910,1915
+CHI09,True,South Side Park III,2087,1910,1910
+CHI10,True,Comiskey Park I,478032,1910,1990
+CHI11,True,Wrigley Field,664346,1916,2025
+CHI12,True,Guaranteed Rate Field;U.S. Cellular Field,209926,1991,2025
+CIN06,True,Palace of the Fans,11982,1910,1911
+CIN07,True,Crosley Field,345181,1912,1970
+CIN08,True,Cinergy Field,196989,1970,2002
+CIN09,True,Great American Ballpark,138753,2003,2025
+CLE06,True,League Park IV,184838,1910,1946
+CLE07,True,Cleveland Stadium,320034,1932,1993
+CLE08,True,Progressive Field,190978,1994,2025
+DEN01,True,Mile High Stadium,10994,1993,1994
+DEN02,True,Coors Field,194573,1995,2025
+DET02,True,Bennett Park,11828,1910,1911
+DET04,True,Tiger Stadium,532324,1912,1999
+DET05,True,Comerica Park,156429,2000,2025
+DUN01,True,TD Ballpark,1684,2021,2021
+DYE01,True,Field of Dreams,157,2021,2022
+FTB01,True,Fort Bragg Field,79,2016,2016
+HON01,True,Aloha Stadium,214,1997,1997
+HOU01,True,Colt Stadium,18002,1962,1964
+HOU02,True,Astrodome,210737,1965,1999
+HOU03,True,Minute Maid Park,155390,2000,2025
+JER02,True,Roosevelt Stadium,1073,1956,1957
+KAN05,True,Municipal Stadium,103383,1955,1972
+KAN06,True,Kauffman Stadium,320477,1973,2025
+LAS01,True,Cashman Field,538,1996,1996
+LBV01,True,The Ballpark at Disney's Wide World,479,2007,2008
+LON01,True,London Stadium,506,2019,2024
+LOS01,True,Los Angeles Memorial Coliseum,23874,1958,1961
+LOS02,True,Wrigley Field,6526,1961,1961
+LOS03,True,Dodger Stadium,404593,1962,2025
+MEX02,False,,326,2023,2024
+MIA01,True,Sun Life Stadium,116085,1993,2011
+MIA02,True,Marlins Park,81400,2012,2025
+MIL05,True,County Stadium,265694,1953,2000
+MIL06,True,Miller Park,150692,2001,2025
+MIN02,True,Metropolitan Stadium,127794,1961,1981
+MIN03,True,Hubert H. Humphrey Metrodome,172727,1982,2009
+MIN04,True,Target Field,95040,2010,2025
+MNT01,True,Estadio Monterrey,864,1996,2019
+MON01,True,Parc Jarry,49549,1969,1976
+MON02,True,Stade Olympique,163282,1977,2004
+NYC10,True,Polo Grounds IV,5815,1910,1910
+NYC12,True,Washington Park III,17216,1910,1912
+NYC13,True,Hilltop Park,22948,1910,1912
+NYC14,True,Polo Grounds V,336126,1912,1963
+NYC15,True,Ebbets Field,264496,1913,1957
+NYC16,True,Yankee Stadium I,501966,1923,2008
+NYC17,True,Shea Stadium,283565,1964,2008
+NYC20,True,Citi Field,99834,2009,2025
+NYC21,True,Yankee Stadium II,100228,2009,2025
+OAK01,True,Oakland-Alameda County Coliseum,341780,1968,2024
+OMA01,True,TD Ameritrade Park,80,2019,2019
+PHI09,True,Baker Bowl,167916,1910,1938
+PHI11,True,Shibe Park,460589,1910,1970
+PHI12,True,Veterans Stadium,201310,1971,2003
+PHI13,True,Citizens Bank Park,132648,2004,2025
+PHO01,True,Chase Field,170549,1998,2025
+PIT06,True,Forbes Field,360302,1910,1970
+PIT07,True,Three Rivers Stadium,184037,1970,2000
+PIT08,True,PNC Park,150900,2001,2025
+SAC01,False,,6327,2025,2025
+SAN01,True,Qualcomm Stadium,210657,1969,2003
+SAN02,True,PETCO Park,129900,2004,2025
+SEA01,True,Sick's Stadium,6457,1969,1969
+SEA02,True,Kingdome,136056,1977,1999
+SEA03,True,Safeco Field,157767,1999,2025
+SEO01,False,,182,2024,2024
+SFO01,True,Seals Stadium,11805,1958,1959
+SFO02,True,Candlestick Park,241413,1960,1999
+SFO03,True,AT&T Park,156147,2000,2025
+SJU01,True,Estadio Hiram Bithorn,3821,2001,2018
+STL05,True,Robison Field,53263,1910,1920
+STL07,True,Sportsman's Park III,545585,1910,1966
+STL09,True,Busch Stadium II,241793,1966,2005
+STL10,True,Busch Stadium III,118257,2006,2025
+STP01,True,Tropicana Field,161615,1998,2024
+SYD01,True,Sydney Cricket Ground,162,2014,2014
+TAM02,False,,6023,2025,2025
+TOK01,True,Tokyo Dome,966,2000,2025
+TOR01,True,Exhibition Stadium,74147,1977,1989
+TOR02,True,Rogers Centre,215489,1989,2025
+WAS08,True,American League Park II,5636,1910,1910
+WAS09,True,Griffith Stadium,304419,1911,1961
+WAS10,True,Robert F. Kennedy Stadium,79624,1962,2007
+WAS11,True,Nationals Park,106941,2008,2025
+WIL02,True,BB&T Ballpark at Bowman Field,588,2017,2025

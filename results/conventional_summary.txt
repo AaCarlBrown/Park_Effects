@@ -1,0 +1,6 @@
+INFO  stage 4 2026-07-13T08:34:47
+PASS  conventional factors for 2,578 team-seasons (expected 2,350-2,750; paper says 2,548)
+INFO  sigma2 (real-time series) = 0.3376
+INFO  predictions for 2,510 park-seasons
+WARN  data\published_factors.csv not present; the 0.94 published-correlation claim stays unverified this run
+INFO  GATE: PASSED - 0 FAIL, 1 WARN

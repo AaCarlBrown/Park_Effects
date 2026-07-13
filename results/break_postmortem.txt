@@ -1,0 +1,223 @@
+stage 3c post-mortem 2026-07-13T03:17:49
+sigma2 = 0.4279; single-season SE at 6,000 PA = 8.4 pts
+
+=== Fenway 1934/35 (screen said 1937) (BOS07), window 1930-1940, series bounded 1912-1985 ===
+raw-series profile peak:    1937
+shrunk-series profile peak: 1937
+raw profile (gain by candidate year):
+ candidate  gain
+      1930  79.9
+      1931  90.4
+      1932  94.8
+      1933 100.3
+      1934 101.4
+      1935 105.0
+      1936 103.4
+      1937 114.6
+      1938 114.3
+      1939 114.0
+      1940 112.1
+  1932: raw -5.6 pts (n=5,070)
+  1933: raw +3.2 pts (n=5,690)
+  1934: raw -0.7 pts (n=5,853)
+  1935: raw +8.2 pts (n=6,244)
+  1936: raw -12.3 pts (n=5,926)
+  1937: raw +6.7 pts (n=5,686)
+  1938: raw +7.0 pts (n=5,651)
+
+=== Fenway 1985 (screen said 1986) (BOS07), window 1980-1990, series bounded 1937-2025 ===
+raw-series profile peak:    1986
+shrunk-series profile peak: 1986
+raw profile (gain by candidate year):
+ candidate  gain
+      1980  19.2
+      1981  19.2
+      1982  22.5
+      1983  24.7
+      1984  26.0
+      1985  29.8
+      1986  29.8
+      1987  27.2
+      1988  26.2
+      1989  27.7
+      1990  29.6
+  1982: raw +21.7 pts (n=6,163)
+  1983: raw +17.6 pts (n=6,220)
+  1984: raw +26.2 pts (n=6,274)
+  1985: raw +12.7 pts (n=6,164)
+  1986: raw +2.8 pts (n=6,025)
+  1987: raw +8.4 pts (n=6,181)
+  1988: raw +17.9 pts (n=6,059)
+
+=== Wrigley 1962 (CHI11), window 1957-1967, series bounded 1916-1991 ===
+raw-series profile peak:    1964
+shrunk-series profile peak: 1962
+raw profile (gain by candidate year):
+ candidate  gain
+      1957  65.8
+      1958  68.2
+      1959  70.1
+      1960  76.6
+      1961  81.9
+      1962  84.8
+      1963  84.3
+      1964  87.3
+      1965  81.1
+      1966  79.3
+      1967  77.4
+  1959: raw -7.5 pts (n=5,633)
+  1960: raw -3.2 pts (n=5,968)
+  1961: raw +2.0 pts (n=5,876)
+  1962: raw +9.0 pts (n=5,914)
+  1963: raw +2.5 pts (n=5,881)
+  1964: raw +21.1 pts (n=5,728)
+  1965: raw +12.1 pts (n=6,197)
+
+=== Wrigley 1992 (CHI11), window 1987-1997, series bounded 1962-2025 ===
+raw-series profile peak:    1992
+shrunk-series profile peak: 1992
+raw profile (gain by candidate year):
+ candidate  gain
+      1987  37.4
+      1988  41.2
+      1989  44.9
+      1990  45.9
+      1991  52.2
+      1992  54.1
+      1993  49.4
+      1994  50.8
+      1995  43.1
+      1996  41.1
+      1997  35.6
+  1989: raw +12.2 pts (n=6,055)
+  1990: raw +24.3 pts (n=6,195)
+  1991: raw +13.7 pts (n=6,317)
+  1992: raw -1.6 pts (n=6,100)
+  1993: raw +12.1 pts (n=6,095)
+  1994: raw -16.4 pts (n=4,457)
+  1995: raw +2.9 pts (n=5,518)
+
+=== Cleveland 1947 (screen said 1952) (CLE07), window 1944-1958, series bounded 1932-1993 ===
+raw-series profile peak:    1952
+shrunk-series profile peak: 1952
+raw profile (gain by candidate year):
+ candidate  gain
+      1944  38.6
+      1945  36.3
+      1946  39.2
+      1947  46.3
+      1948  42.9
+      1949  39.5
+      1950  45.4
+      1951  45.8
+      1952  47.3
+      1953  46.1
+      1954  45.2
+      1955  39.9
+      1956  40.5
+      1957  42.8
+      1958  37.4
+  1946: raw -34.8 pts (n=2,949)
+  1947: raw -7.8 pts (n=5,674)
+  1948: raw -6.3 pts (n=5,924)
+  1949: raw -21.6 pts (n=5,810)
+  1950: raw -11.5 pts (n=5,863)
+  1951: raw -13.1 pts (n=5,697)
+  1952: raw -7.3 pts (n=5,737)
+  1953: raw -7.3 pts (n=5,653)
+  1954: raw +2.6 pts (n=5,743)
+  1955: raw -9.1 pts (n=5,894)
+  1956: raw -12.9 pts (n=5,647)
+
+=== Comiskey Sox Sod (screen found nothing) (CHI10), window 1964-1980, series bounded 1910-1990 ===
+raw-series profile peak:    1969
+shrunk-series profile peak: 1969
+raw profile (gain by candidate year):
+ candidate  gain
+      1964   0.2
+      1965   0.9
+      1966   2.0
+      1967   5.2
+      1968   9.5
+      1969   9.6
+      1970   6.4
+      1971   3.2
+      1972   2.8
+      1973   1.4
+      1974   0.8
+      1975   0.2
+      1976   0.0
+      1977   0.1
+      1978   0.3
+      1979   0.7
+      1980   0.8
+  1966: raw -34.2 pts (n=5,874)
+  1967: raw -30.1 pts (n=6,042)
+  1968: raw -3.1 pts (n=5,229)
+  1969: raw +19.4 pts (n=5,036)
+  1970: raw +19.9 pts (n=6,367)
+  1971: raw -0.2 pts (n=6,016)
+  1972: raw +13.9 pts (n=5,630)
+  1973: raw +5.3 pts (n=6,130)
+  1974: raw +9.3 pts (n=5,965)
+  1975: raw +8.3 pts (n=6,153)
+  1976: raw +4.6 pts (n=6,125)
+  1977: raw +1.7 pts (n=6,179)
+  1978: raw +2.9 pts (n=5,935)
+
+=== Sportsman's mid-1920s (screen said 1919) (STL07), window 1915-1930, series bounded 1910-1966 ===
+raw-series profile peak:    1919
+shrunk-series profile peak: 1919
+raw profile (gain by candidate year):
+ candidate  gain
+      1915  11.4
+      1916  14.0
+      1917  15.1
+      1918  16.3
+      1919  19.8
+      1920  19.5
+      1921  11.6
+      1922  13.3
+      1923   8.7
+      1924  17.2
+      1925  15.1
+      1926  12.2
+      1927  12.2
+      1928   9.3
+      1929   8.7
+      1930  12.4
+  1917: raw -2.1 pts (n=5,860)
+  1918: raw -13.1 pts (n=3,861)
+  1919: raw +2.5 pts (n=5,307)
+  1920: raw +18.8 pts (n=9,545)
+  1921: raw +0.2 pts (n=11,785)
+  1922: raw +14.3 pts (n=11,782)
+  1923: raw -14.6 pts (n=11,597)
+  1924: raw +8.6 pts (n=11,799)
+  1925: raw +11.1 pts (n=11,959)
+  1926: raw +5.0 pts (n=12,165)
+  1927: raw +13.2 pts (n=12,097)
+  1928: raw +7.5 pts (n=11,616)
+
+=== Crosley restore 1958 (sub-threshold) (CIN07), window 1954-1964, series bounded 1953-1970 ===
+raw-series profile peak:    1964
+shrunk-series profile peak: 1964
+raw profile (gain by candidate year):
+ candidate  gain
+      1955   0.1
+      1956   0.2
+      1957   0.6
+      1958   0.9
+      1959   0.2
+      1960   1.2
+      1961   0.5
+      1962   0.0
+      1963   0.4
+      1964   1.5
+  1956: raw +15.6 pts (n=5,821)
+  1957: raw +14.3 pts (n=5,990)
+  1958: raw +2.5 pts (n=5,757)
+  1959: raw +22.4 pts (n=5,734)
+  1960: raw +3.5 pts (n=5,825)
+  1961: raw -1.2 pts (n=5,523)
+  1962: raw -2.3 pts (n=6,036)

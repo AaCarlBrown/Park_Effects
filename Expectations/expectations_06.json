@@ -1,0 +1,16 @@
+{
+  "stage": 6,
+  "description": "Pre-registered expectations for the park splits. Definitions approved 2026-07-13 (originals unavailable): quality = quartiles of full-sample tau_bat; type = quartiles of era-standardized extra-base rate minus era-standardized (walk+single+HBP) rate; both among batters with 1,500+ career PA. SD ranges bracket the original board values (hand 6.6, type 5.5, quality 4.5 pts); park-level gates are membership checks, not exact values.",
+  "min_career_pa": 1500,
+  "min_park_pa": 20000,
+  "hand_split_true_sd_range": [4.0, 9.0],
+  "type_gap_true_sd_range": [3.0, 8.0],
+  "quality_gap_true_sd_range": [2.5, 7.0],
+  "pitcher_null_max_sd": 2.5,
+  "interaction_true_sd_range": [4.0, 9.0],
+  "interaction_min_parks_2z": 6,
+  "revisions": {
+    "interaction": "The draft claimed no detectable hand-x-type interaction; the rerun detects one decisively (true SD 6.2 pts, 10 of 57 parks at |z|>=2, chance ~3). It is led by exactly the parks physics predicts: Yankee Stadium I +22.7 pts more lefty-friendly for sluggers than contact hitters (z 5.2), League Park +26.6 (z 3.3), with deep parks (Forbes, Dodger Stadium) running the inverse. Short porches amplify pull power specifically. Gate flipped from null-check to detection-check; the manuscript's 'how hard you swing does not detectably change the deal' sentence reverses, and the hand-blind ledger discussion in the Career Ledger section may need a hand-x-type-aware caveat. The original null was likely an artifact of the low-K shrinkage noted in the project record."
+  },
+  "notes": "Membership expectations from the manuscript: League Park top-2 lefty-friendly (+24 in the draft), Fenway top-3 righty-friendly (-15); Baker Bowl and Coors among slugger-friendly, Astrodome and Forbes among contact-friendly; Baker Bowl high and Braves Field low on the quality gap. League Park is CLE06. Park-level values fill Tables 5-7; if the rankings differ from the draft's examples, the tables and prose follow the rerun."
+}

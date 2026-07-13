@@ -1,0 +1,18 @@
+stage 4c conversion 2026-07-13T15:46:14
+park-regimes with >= 8 seasons: 80
+corr(run_eff, exp_run_eff) across park-regimes: 0.959
+conversion residual: observed SD 4.0 pts, mean sampling SE 2.8, TRUE SD 1.2 pts
+parks-regimes with |conv|/se >= 2: 11 of 80 (chance ~4)
+
+largest conversion residuals (runs materialize above/below expectation):
+            name  start  end  woba_eff_pts  exp_run_eff_pts  run_eff_pts  conv_pts    z
+Yankee Stadium I   1923 2008          -1.8             -1.3         -8.5      -7.2 -5.1
+     Coors Field   2003 2025          34.0             27.8         38.5      10.8  3.1
+     Coors Field   1995 2002          56.5             47.8         70.6      22.7  3.0
+   Crosley Field   1919 1952         -17.2            -13.6         -7.8       5.9  2.6
+    Turner Field   1997 2016         -10.0             -8.3         -2.4       5.9  2.5
+   Wrigley Field   1962 1991          17.9             13.6         19.3       5.8  2.4
+     Chase Field   1998 2025           5.7              4.6         10.5       5.8  2.4
+ Comiskey Park I   1910 1990          -8.0             -6.1         -2.5       3.6  2.2
+
+verdict: if TRUE SD stays positive, parks convert wOBA to runs at stable idiosyncratic rates; a conversion-augmented mesoball run-factor predictor remains the natural upgrade (not applied retroactively to the locked Stage 4 contest).

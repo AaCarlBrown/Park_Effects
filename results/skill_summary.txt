@@ -1,0 +1,11 @@
+INFO  stage 2 full-sample fit 2026-07-12T17:54:45
+INFO  rows after filters: 14,973,073  batters 11,427  pitchers 7,027  seasons 116
+INFO  pyfixest fit in 80s
+PASS  mu_1968 = -0.0334 (expected [-0.042, -0.030])
+PASS  mu_1930 = +0.0344 (expected [+0.031, +0.043])
+PASS  mu_1969_minus_1968 = +0.0249 (expected [+0.020, +0.032])
+PASS  mu_span = +0.0709 (expected [+0.065, +0.081])
+PASS  batter age curve peaks at 27
+INFO  min mu season: 1968 (-0.0334); max mu season: 1925 (+0.0375)
+INFO  wrote mu_S.csv, alpha_*.csv, tau_bat.parquet (11,417), tau_pit.parquet (7,026)
+INFO  GATE: PASSED - 0 FAIL, 0 WARN

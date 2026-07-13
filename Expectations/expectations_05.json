@@ -1,0 +1,16 @@
+{
+  "stage": 5,
+  "description": "Pre-registered expectations for the Wrigley wind analysis, pinned from the manuscript. The matched-game count fills the manuscript's TK; Stage 1 measured 5,061 day games since 1950, and some will lack usable wind hours.",
+  "start_season": 1950,
+  "matched_games_range": [4600, 5061],
+  "overall_slope_range": [0.28, 0.46],
+  "overall_min_z": 15,
+  "transition_min_z_rise": 2.0,
+  "transition_min_z_fall": 3.5,
+  "final_outcome": "ACCEPTED 2026-07-13: overall 0.379 (z 24.0), regimes 0.342/0.450/0.308, rise +0.108 at 2.4 SE, fall +0.142 at 4.1 SE, 5,051 games matched (99.4% Midway). Manuscript updates queued in paper_corrections_queue.md.",
+  "regime_slopes_paper": {"1950-1961": 0.32, "1962-1991": 0.45, "1992-2025": 0.33},
+  "revisions": {
+    "outcome_variable": "First run regressed raw game runs (minus season mean) on outward wind: overall slope 0.389 at z=26.1 and the paper's regime pattern (0.363/0.432/0.342), but transitions at only 1.6/2.8 SE vs the paper's ~4. Raw runs carry opponent-quality and sequencing noise the manuscript's method removes. Second run uses the faithful outcome - per-game sum of skill-adjusted residuals (Stage 2 parts) with temperature partialled out - and is COMMITTED AS FINAL: whatever the transition SEs come out to be, the manuscript's 'four standard errors' sentence is updated to match, and if the transitions land below ~2 SE the wind-sensitivity claim is downgraded to suggestive."
+  },
+  "notes": "Method choices documented in the script header: Midway primary with O'Hare fallback (the reverse of the original memory note, justified by distance to Wrigley: 9 vs 19 km); game wind = mean over 18-22 UTC; outward = component along the ~45-degree center-field bearing; run outcome = game total runs minus same-season MLB mean. The original slope of 0.37 at z~30 came from a per-PA model, so the game-level regression here may differ somewhat in slope and will have lower z; ranges are set accordingly. If regime slopes do not reproduce the 0.32/0.45/0.33 pattern, the Wrigley wind section of the paper changes - that is the most vulnerable headline result still standing."
+}

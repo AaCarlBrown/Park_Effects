@@ -1,0 +1,10 @@
+{
+  "stage": 2,
+  "description": "Pre-registered expectations for the core skill model, pinned from the Cliometrica manuscript (section 2.3). Mismatches are findings.",
+  "mu_1968_range": [-0.042, -0.030],
+  "mu_1930_range": [0.031, 0.043],
+  "mu_1969_jump_range": [0.020, 0.032],
+  "mu_span_range": [0.065, 0.081],
+  "bat_age_peak_range": [25, 30],
+  "notes": "mu_1968 pinned at -0.036 (Year of the Pitcher), mu_1930 at +0.037 (live-ball peak), 1968->1969 jump +0.026 (mound lowered), full span 0.073. Tolerances allow for the slightly different filter cascade after Stage 1 revisions. tau outputs are PA-weighted mean-anchored; age curves anchored at 28."
+}
